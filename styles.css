@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Terminus';
+  src: url('./fonts/Terminus\ \(TTF\)\ 500.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Terminus';
+  src: url('./fonts/Terminus\ \(TTF\)\ Bold\ 700.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Terminus';
+  src: url('./fonts/Terminus\ \(TTF\)\ Bold\ Italic\ 700.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Terminus';
+  src: url('./fonts/Terminus\ \(TTF\)\ Italic\ 500.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  font-family: 'Terminus', monospace, monospace;
+  background-color: #121212;
+  color: #eee;
+  margin: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+h1 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  max-width: 400px;
+  margin: 0 auto;
+  color: #ccc;
+}
