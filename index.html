@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Me</title>
+  <title>{ Cub0rd }</title>
   
-  <!-- Favicon links -->
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
   <link rel="shortcut icon" href="icons/favicon.ico">
@@ -16,7 +15,6 @@
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <!-- Loading Screen -->
   <div id="loading-screen" class="loading-screen">
     <div class="loading-content">
       <h1 class="loading-title">{ Cub0rd }</h1>
@@ -25,13 +23,10 @@
     </div>
   </div>
 
-  <!-- Main Content -->
   <div id="main-content" class="main-content">
-    <!-- Matrix Background -->
     <canvas id="matrix-canvas" class="matrix-canvas"></canvas>
     
     <div class="layout-container">
-      <!-- Fun Facts Section -->
       <div class="side-panel left-panel">
         <h2 class="panel-title">Fun Facts</h2>
         <ul class="fact-list">
@@ -45,7 +40,6 @@
         </ul>
       </div>
 
-      <!-- Center Profile Section -->
       <div class="center-panel">
         <a href="https://en.wikipedia.org/wiki/A_Boogie_wit_da_Hoodie" target="_blank">
           <img src="images/boogie.png" alt="My Face" class="avatar"/>
@@ -58,11 +52,10 @@
           <p>Discord: 1g89</p>
         </div>
         <div class="privacy-section">
-          <a href="privacy" class="privacy-btn">RECLAIM YOUR PRIVACY</a>
+          <button id="privacy-btn" class="privacy-btn">RECLAIM YOUR PRIVACY</button>
         </div>
       </div>
 
-      <!-- About Me Section -->
       <div class="side-panel right-panel">
         <h2 class="panel-title">About Me</h2>
         <div class="about-content">
@@ -74,19 +67,43 @@
       </div>
     </div>
 
-    <!-- Media Player Section -->
-    <div class="terminal">
-      <div class="terminal-content">
-        <div class="current-track">
-          <span class="track-label">Now Playing:</span>
-          <span id="current-song" class="track-name">No song selected</span>
+    <div id="privacy-section" class="privacy-section-content" style="display: none;">
+      <div class="back-button-container">
+        <button id="back-btn" class="back-btn">← BACK TO HOME</button>
+      </div>
+
+      <div class="privacy-container">
+        <div class="header-section">
+          <h1 class="main-title">RECLAIM YOUR PRIVACY</h1>
+          <div class="motto">
+            "Progress is more important than perfection."
+          </div>
         </div>
-        <div class="player-controls">
-          <button id="prev-btn" class="control-btn">⏮</button>
-          <button id="play-pause-btn" class="control-btn">▶</button>
-          <button id="next-btn" class="control-btn">⏭</button>
+
+        <div class="privacy-grid">
+          <div class="privacy-card unified-card">
+            <h2 class="card-title"><center>Why Your Privacy Matters</center></h2>
+
+            <div class="privacy-content">
+              <div class="intro-section">
+                <p><center>In our digital age, privacy has never been more critical, and yet many believe it is a lost cause. It is not. Your privacy is up for grabs, and you need to care about it. Privacy is about power, and it is so important that this power ends up in the right hands.</center></p>
+              </div>
+
+              <div class="action-section">
+                <h3><center>Ready to take control?</center></h3>
+                <p><center>Begin with this comprehensive privacy resource:</center></p>
+                <a href="https://privacyguides.org/" target="_blank" class="guide-link">
+                  <div class="guide-content">
+                    <div class="guide-text">
+                      <strong><center>Privacy Guides</center></strong>
+                      <span><center>A not-for-profit, volunteer-run project that hosts online communities and publishes news and recommendations surrounding privacy and security tools, services, and knowledge.</center></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <audio id="player" class="audio-player"></audio>
       </div>
     </div>
   </div>
