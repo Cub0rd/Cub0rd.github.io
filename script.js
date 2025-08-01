@@ -189,7 +189,7 @@ function addPrivacyButtonTransition() {
         mainContent.style.display = 'none';
         
         setTimeout(() => {
-          window.location.href = 'privacy/';
+          window.location.href = 'privacy';
         }, 50);
       }, 500);
     });

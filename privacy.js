@@ -2,8 +2,10 @@
 
 // Privacy page song list (different from main page)
 const songs = [
-  { title: "Animal I Have Become", artist: "Three Days Grace", file: "songs/Animal I Have Become - Three Days Grace.mp3" },
-  // You can add different songs here for the privacy page
+  { title: "Animal I Have Become", artist: "Three Days Grace", file: "../songs/Animal I Have Become - Three Days Grace.mp3" },
+  { title: "Jungle", artist: "A Boogie Wit da Hoodie", file: "../songs/Jungle - A Boogie Wit da Hoodie.mp3" },
+  { title: "Suge", artist: "DaBaby", file: "../songs/Suge - DaBaby.mp3" },
+  { title: "The Box", artist: "Roddy Ricch", file: "../songs/The Box - Roddy Ricch.mp3" }
 ];
 
 let currentSongIndex = 0;
