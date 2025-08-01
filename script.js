@@ -2,7 +2,6 @@ const songs = [
   { title: "Jungle", artist: "A Boogie Wit da Hoodie", file: "songs/Jungle - A Boogie Wit da Hoodie.mp3" },
   { title: "Suge", artist: "DaBaby", file: "songs/Suge - DaBaby.mp3" },
   { title: "The Box", artist: "Roddy Ricch", file: "songs/The Box - Roddy Ricch.mp3" },
-  { title: "Animal I Have Become", artist: "Three Days Grace", file: "songs/Animal I Have Become - Three Days Grace.mp3" },
   // Add more songs here
 ];
 
@@ -167,4 +166,32 @@ document.addEventListener('DOMContentLoaded', () => {
   if (loadingPlayBtn) {
     loadingPlayBtn.onclick = startExperience;
   }
+  
+  // Add smooth transition for take control button
+  addTakeControlTransition();
 });
+
+// Smooth transition for take control button
+function addTakeControlTransition() {
+  const takeControlBtn = document.querySelector('.take-control-btn');
+  
+  if (takeControlBtn) {
+    takeControlBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      
+      // Create the same transition effect as the loading screen
+      const mainContent = document.getElementById('main-content');
+      
+      // Fade out main content
+      mainContent.style.opacity = '0';
+      
+      setTimeout(() => {
+        mainContent.style.display = 'none';
+        
+        setTimeout(() => {
+          window.location.href = 'privacy.html';
+        }, 50);
+      }, 500);
+    });
+  }
+}
