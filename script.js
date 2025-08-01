@@ -167,16 +167,16 @@ document.addEventListener('DOMContentLoaded', () => {
     loadingPlayBtn.onclick = startExperience;
   }
   
-  // Add smooth transition for take control button
-  addTakeControlTransition();
+  // Add smooth transition for privacy button
+  addPrivacyButtonTransition();
 });
 
-// Smooth transition for take control button
-function addTakeControlTransition() {
-  const takeControlBtn = document.querySelector('.take-control-btn');
+// Smooth transition for privacy button
+function addPrivacyButtonTransition() {
+  const privacyBtn = document.querySelector('.privacy-btn');
   
-  if (takeControlBtn) {
-    takeControlBtn.addEventListener('click', (e) => {
+  if (privacyBtn) {
+    privacyBtn.addEventListener('click', (e) => {
       e.preventDefault();
       
       // Create the same transition effect as the loading screen

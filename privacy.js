@@ -147,16 +147,8 @@ function addBackButtonTransition() {
     backBtn.addEventListener('click', (e) => {
       e.preventDefault();
       
-      // Create the same transition effect as the loading screen
-      const mainContent = document.getElementById('main-content');
-      
-      // Fade out main content
-      mainContent.style.transition = 'opacity 0.5s ease';
-      mainContent.style.opacity = '0';
-      
-      setTimeout(() => {
-        window.location.href = 'index.html';
-      }, 500);
+      // Direct navigation to home page without loading screen
+      window.location.href = backBtn.href;
     });
   }
 }
